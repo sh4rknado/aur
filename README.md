@@ -1,0 +1,2 @@
+# aur
+aur packages LFS
