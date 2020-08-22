@@ -7,7 +7,7 @@ arch=(x86_64)
 url=""
 license=('GPL')
 groups=()
-depends=()
+depends=('figlet')
 makedepends=()
 optdepends=()
 provides=()
@@ -36,14 +36,32 @@ md5sums=(
 _BUILD_DIR=$(pwd)
 
 build() {
-  # Prepare package
+
+  # Making the Binutils PASS-1
   _prepare "binutils" "BINUTILS-TOOLCHAINS-PKGBUILD"
-
-  # Make The package
   _make "binutils"
-
-  # Cleanning The package
   _cleanning "binutils"
+
+  # Making the GCC PASS-1
+  _prepare "gcc" "GCC-TOOLCHAINS-PKGBUILD"
+  _make "gcc"
+  _cleanning "gcc"
+
+  # Making the Linux Header
+  _prepare "linux-header" "LINUX-HEADER-TOOLCHAINS-PKGBUILD"
+  _make "linux-header"
+  _cleanning "linux-header"
+
+  # Making the GLIBC
+  _prepare "glibc" "GLIBC-TOOLCHAINS-PKGBUILD"
+  _make "glibc"
+  _cleanning "glibc"
+
+  # Making the LIBSTDC
+  _prepare "libstc" "LIBSTDC-TOOLCHAINS-PKGBUILD"
+  _make "libstc"
+  _cleanning "libstc"
+
 }
 
 package() {
