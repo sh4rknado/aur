@@ -18,14 +18,14 @@ options=()
 install=
 changelog=
 source=(
-  'http://192.168.1.202/binutils-2.35.tar.xz'
-  'http://192.168.1.202/gcc-10.2.0.tar.xz'
-  'http://192.168.1.202/mpfr-4.1.0.tar.xz'
-  'http://192.168.1.202/gmp-6.2.0.tar.xz'
-  'http://192.168.1.202/mpc-1.1.0.tar.gz'
-  'http://192.168.1.202/linux-5.8.1.tar.xz'
-  'http://192.168.1.202/glibc-2.32.tar.xz'
-  'http://192.168.1.202/glibc-2.32-fhs-1.patch'
+  'http://192.168.1.202/src/binutils-2.35.tar.xz'
+  'http://192.168.1.202/src/gcc-10.2.0.tar.xz'
+  'http://192.168.1.202/src/mpfr-4.1.0.tar.xz'
+  'http://192.168.1.202/src/gmp-6.2.0.tar.xz'
+  'http://192.168.1.202/src/mpc-1.1.0.tar.gz'
+  'http://192.168.1.202/src/linux-5.8.1.tar.xz'
+  'http://192.168.1.202/src/glibc-2.32.tar.xz'
+  'http://192.168.1.202/src/glibc-2.32-fhs-1.patch'
   'http://192.168.1.202/aur/binutils-toolchains/P0KGBUILD'
   'http://192.168.1.202/aur/gcc-toolchains/PKGBUILD'
   'http://192.168.1.202/aur/glibc-toolchains/PKGBUILD'
