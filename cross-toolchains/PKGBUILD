@@ -2,7 +2,7 @@
 pkgname="ToolschainsHeaders"
 pkgver="1.0"
 pkgrel=1
-pkgdesc="Toolschains Packages"
+pkgdesc="Toolschains LFS Packages"
 arch=(x86_64)
 url=""
 license=('GPL')
@@ -33,19 +33,38 @@ md5sums=(
   'c14d5c2467ad52652acd4da41e5eab84'
 ) #autofill using updpkgsums
 
+_BUILD_DIR=$(pwd)
 
 build() {
+  # Prepare package
+  _prepare "binutils" "BINUTILS-TOOLCHAINS-PKGBUILD"
 
-  echo -e "\nMake Binutils\n"
-  mkdir -pv binutils
-  cp -avr BINUTILS-TOOLCHAINS-PKGBUILD binutils/PKGBUILD
-  cd binutils
-  makepkg -f
-  cd ..
-  rm -rfv binutils
+  # Make The package
+  _make "binutils"
+
+  # Cleanning The package
+  _cleanning "binutils"
 }
 
 package() {
   echo -e "No Install"
   cd ..
+}
+
+# /////////////////////////////////// < CUSTOM PACKAGING > ////////////////////////////////////
+
+_prepare() {
+  echo -e "\n Prepare Package $1\n"
+  mkdir -pv $1
+  cp -avr $2 $1/PKGBUILD
+}
+
+_make() {
+  cd $1
+  makepkg -f
+}
+
+_cleanning() {
+  cd $_BUILD_DIR
+  rm -rfv $1
 }
