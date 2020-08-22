@@ -18,10 +18,10 @@ options=()
 install=
 changelog=
 source=(
-  "$pkgname-$pkgver.tar.xz"
-  'mpfr-4.1.0.tar.xz'
-  'gmp-6.2.0.tar.xz'
-  'mpc-1.1.0.tar.gz'
+  'http://192.168.1.202/src/gcc-10.2.0.tar.xz'
+  'http://192.168.1.202/src/mpfr-4.1.0.tar.xz'
+  'http://192.168.1.202/src/gmp-6.2.0.tar.xz'
+  'http://192.168.1.202/src/mpc-1.1.0.tar.gz'
 )
 noextract=()
 md5sums=(
@@ -32,6 +32,7 @@ md5sums=(
 ) #autofill using updpkgsums
 
 build() {
+
   cd "$pkgname-$pkgver"
 
   echo -e "\nGet the Lib dependency\n"

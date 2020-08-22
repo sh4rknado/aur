@@ -72,19 +72,19 @@ package() {
 # /////////////////////////////////// < CUSTOM PACKAGING > ////////////////////////////////////
 
 _prepare() {
-  figlet "Prepare $1"
+  figlet "\nPrepare\n"
   mkdir -pv $1
   cp -avr $2 $1/PKGBUILD
 }
 
 _make() {
-  figlet "MAKING $1"
+  figlet "\nMAKING\n"
   cd $1
   makepkg -f
 }
 
 _cleanning() {
-  figlet "CLEANNIG $1"
+  figlet "\nCLEANNIG\n"
   cd $_BUILD_DIR
   rm -rfv $1
 }
