@@ -22,7 +22,7 @@ source=(
   'http://192.168.1.202/aur/gcc-toolchains/GCC-TOOLCHAINS-PKGBUILD'
   'http://192.168.1.202/aur/glibc-toolchains/GLIBC-TOOLCHAINS-PKGBUILD'
   'http://192.168.1.202/aur/libstdc-toolchains/LIBSTDC-TOOLCHAINS-PKGBUILD'
-  'http://192.168.1.202/aur/linux-toolchains/LINUX-HEADER-TOOLCHAINS-PKGBUILD'
+  'http://192.168.1.202/aur/linux-header-toolchains/LINUX-HEADER-TOOLCHAINS-PKGBUILD'
 )
 noextract=()
 md5sums=(
