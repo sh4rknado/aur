@@ -18,11 +18,18 @@ options=()
 install=
 changelog=
 source=(
-  'http://192.168.1.202/aur/binutils-toolchains/BINUTILS-TOOLCHAINS-PKGBUILD'
-  'http://192.168.1.202/aur/gcc-toolchains/GCC-TOOLCHAINS-PKGBUILD'
-  'http://192.168.1.202/aur/glibc-toolchains/GLIBC-TOOLCHAINS-PKGBUILD'
-  'http://192.168.1.202/aur/libstdc-toolchains/LIBSTDC-TOOLCHAINS-PKGBUILD'
-  'http://192.168.1.202/aur/linux-toolchains/LINUX-HEADER-TOOLCHAINS-PKGBUILD'
+  'http://192.168.1.202/src/gcc-10.2.0.tar.xz'
+  'http://192.168.1.202/src/mpfr-4.1.0.tar.xz'
+  'http://192.168.1.202/src/gmp-6.2.0.tar.xz'
+  'http://192.168.1.202/src/mpc-1.1.0.tar.gz'
+  'http://192.168.1.202/src/linux-5.8.1.tar.xz'
+  'http://192.168.1.202/src/glibc-2.32.tar.xz'
+  'http://192.168.1.202/src/glibc-2.32-fhs-1.patch'
+  'http://192.168.1.202/aur/binutils-toolchains/PKGBUILD'
+  'http://192.168.1.202/aur/gcc-toolchains/PKGBUILD'
+  'http://192.168.1.202/aur/glibc-toolchains/PKGBUILD'
+  'http://192.168.1.202/aur/libstdc-toolchains/PKGBUILD'
+  'http://192.168.1.202/aur/linux-toolchains/PKGBUILD'
 )
 noextract=()
 md5sums=(
