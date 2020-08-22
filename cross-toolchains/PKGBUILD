@@ -26,11 +26,11 @@ source=(
 )
 noextract=()
 md5sums=(
-  'fc8d55e2f6096de8ff8171173b6f5087'
-  'e9fd9b1789155ad09bcf3ae747596b50'
-  'bdd3d5efba9c17da8d83a35ec552baef'
-  'a325e3f09e6d91e62101e59f9bda3ec1'
-  '4125404e41e482ec68282a2e687f6c73'
+  'ccf526f775ef4e009299117349c2d8fd'
+  '9b721168ff504537c0d0499c36ad63b7'
+  '7dd5e9e655c779978e33aa13173b370a'
+  '1b00e362cfe18fbd1d67ceb4845f5a38'
+  'c14d5c2467ad52652acd4da41e5eab84'
 ) #autofill using updpkgsums
 
 
