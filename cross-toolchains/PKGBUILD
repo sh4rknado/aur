@@ -86,7 +86,7 @@ build() {
 }
 
 package() {
-  echo -e "No Install"
+  echo -e "No Install"  >> /tmp/log
   cd ..
 }
 
