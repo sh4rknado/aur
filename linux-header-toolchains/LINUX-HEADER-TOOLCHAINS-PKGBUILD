@@ -18,11 +18,11 @@ options=()
 install=
 changelog=
 source=(
-  'http://192.168.1.202/aur/linux-toolchains/PKGBUILD'
+  'http://192.168.1.202/aur/linux-header-toolchains/LINUX-HEADER-TOOLCHAINS-PKGBUILD'
 )
 noextract=()
 md5sums=(
-  'ee17763117af02637f9f98bfeee32a09'
+  '32e7d33d746223efdefafc609d95d3a7'
 )
 
 
