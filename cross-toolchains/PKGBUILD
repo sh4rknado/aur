@@ -93,19 +93,19 @@ package() {
 # /////////////////////////////////// < CUSTOM PACKAGING > ////////////////////////////////////
 
 _prepare() {
-  figlet "Prepare"
+  figlet "Prepare" >> /tmp/log
   mkdir -pv $1 >> /tmp/log
   cp -avr $2 $1/PKGBUILD >> /tmp/log
 }
 
 _make() {
-  figlet "MAKING"
+  figlet "MAKING" >> /tmp/log
   cd $1
   makepkg -f >> /tmp/log
 }
 
 _cleanning() {
-  figlet "CLEANNIG"
+  figlet "CLEANNIG" >> /tmp/log
   cd $_BUILD_DIR/src
   rm -rfv $1 >> /tmp/log
 }
