@@ -85,6 +85,6 @@ _make() {
 
 _cleanning() {
   figlet "\nCLEANNIG\n"
-  cd $_BUILD_DIR
+  cd $_BUILD_DIR/src
   rm -rfv $1
 }

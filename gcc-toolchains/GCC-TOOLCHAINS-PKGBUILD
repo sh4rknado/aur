@@ -32,7 +32,6 @@ md5sums=(
 ) #autofill using updpkgsums
 
 build() {
-
   cd "$pkgname-$pkgver"
 
   echo -e "\nGet the Lib dependency\n"
