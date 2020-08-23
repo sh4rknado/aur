@@ -28,9 +28,9 @@ noextract=()
 md5sums=(
   'ccf526f775ef4e009299117349c2d8fd'
   '0c9b0125e155f7795dfdfc138cfd6e10'
-  '7dd5e9e655c779978e33aa13173b370a'
+  'b3eed0fa9f982bc36eae6632ac0d51bf'
   '1b00e362cfe18fbd1d67ceb4845f5a38'
-  'c14d5c2467ad52652acd4da41e5eab84'
+  '9d3ef2be65b9553ab7510b1b4acb45ff'
 ) #autofill using updpkgsums
 
 _BUILD_DIR=$(pwd)
