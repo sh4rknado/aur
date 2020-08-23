@@ -30,7 +30,7 @@ md5sums=(
   '4bb7d0a9a2ce93495a082718b102f106'
   'ada8fad778405b0dbbb2df0c5313aec3'
   '925eb491332a2204c9b1b42d9d3c67dd'
-  '32e7d33d746223efdefafc609d95d3a7'
+  '4a07a9fd7ee6dee4da86448efd37dc97'
 ) #autofill using updpkgsums
 
 _BUILD_DIR=$(pwd)
@@ -86,7 +86,7 @@ build() {
 }
 
 package() {
-  echo -e "No Install"  
+  echo -e "No Install"
   cd ..
 }
 
