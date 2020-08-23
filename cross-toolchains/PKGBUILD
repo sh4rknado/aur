@@ -86,28 +86,28 @@ build() {
 }
 
 package() {
-  echo -e "No Install"  >> /tmp/log
+  echo -e "No Install"  &>> /tmp/lfs_log
   cd ..
 }
 
 # /////////////////////////////////// < CUSTOM PACKAGING > ////////////////////////////////////
 
 _prepare() {
-  figlet "Prepare" >> /tmp/log
-  mkdir -pv $1 >> /tmp/log
-  cp -avr $2 $1/PKGBUILD >> /tmp/log
+  figlet "Prepare" &>> /tmp/lfs_log
+  mkdir -pv $1 &>> /tmp/lfs_log
+  cp -avr $2 $1/PKGBUILD &>> /tmp/lfs_log
 }
 
 _make() {
-  figlet "MAKING" >> /tmp/log
+  figlet "MAKING" >> /tmp/lfs_log
   cd $1
-  makepkg -f >> /tmp/log
+  makepkg -f >> /tmp/lfs_log
 }
 
 _cleanning() {
-  figlet "CLEANNIG" >> /tmp/log
+  figlet "CLEANNIG" >> /tmp/lfs_log
   cd $_BUILD_DIR/src
-  rm -rfv $1 >> /tmp/log
+  rm -rfv $1 >> /tmp/lfs_log
 }
 
 
