@@ -29,9 +29,28 @@ md5sums=(
   'bdd3d5efba9c17da8d83a35ec552baef'
   'a325e3f09e6d91e62101e59f9bda3ec1'
   '4125404e41e482ec68282a2e687f6c73'
-) #autofill using updpkgsums
+)
 
 build() {
+  # Prepare package to build
+  _prepare
+
+  # Create the MakeFile
+  _configure
+
+  # Make the package and install
+  _make
+}
+
+package() {
+  echo -e "\nNothing to install\n"
+  cd ..
+}
+
+# /////////////////////////////////// < CUSTOM PACKAGING > ////////////////////////////////////
+
+
+_prepare() {
   cd "$pkgname-$pkgver"
 
   echo -e "\nGet the Lib dependency\n"
@@ -53,7 +72,9 @@ build() {
   echo -e "\nCreate Build directory\n"
   mkdir -v build
   cd       build
+}
 
+_configure() {
   echo -e "\nConfigure the packages\n"
   ../configure                                \
       --target=$LFS_TGT                      \
@@ -75,11 +96,14 @@ build() {
       --disable-libvtv                       \
       --disable-libstdcxx                    \
       --enable-languages=c,c++
+}
 
-
+_make() {
+  figlet "MAKING"
   echo -e "\nBuild the packages\n"
   make -j $NB_CORES
 
+  figlet "MAKING INSTALL"
   echo -e "\nInstall the packages\n"
   make -j $NB_CORES install
 
@@ -87,9 +111,4 @@ build() {
   cd ..
   cat gcc/limitx.h gcc/glimits.h gcc/limity.h > \
     `dirname $($LFS_TGT-gcc -print-libgcc-file-name)`/install-tools/include/limits.h
-}
-
-package() {
-  echo -e "\nNo Install the packages\n"
-  cd ..
 }

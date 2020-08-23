@@ -26,11 +26,11 @@ source=(
 )
 noextract=()
 md5sums=(
-  'ccf526f775ef4e009299117349c2d8fd'
-  '0c9b0125e155f7795dfdfc138cfd6e10'
-  'b3eed0fa9f982bc36eae6632ac0d51bf'
-  '1b00e362cfe18fbd1d67ceb4845f5a38'
-  '9d3ef2be65b9553ab7510b1b4acb45ff'
+  '3782eae6ad18386e20b277fe94337f51'
+  '4bb7d0a9a2ce93495a082718b102f106'
+  'ada8fad778405b0dbbb2df0c5313aec3'
+  '925eb491332a2204c9b1b42d9d3c67dd'
+  '32e7d33d746223efdefafc609d95d3a7'
 ) #autofill using updpkgsums
 
 _BUILD_DIR=$(pwd)

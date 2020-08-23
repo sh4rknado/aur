@@ -17,9 +17,13 @@ backup=()
 options=()
 install=
 changelog=
-source=($pkgname-$pkgver.tar.xz)
+source=(
+  'http://192.168.1.202/src/gcc-10.2.0.tar.xz'
+)
 noextract=()
-md5sums=(ee17763117af02637f9f98bfeee32a09) #autofill using updpkgsums
+md5sums=(
+  'e9fd9b1789155ad09bcf3ae747596b50'
+)
 
 build() {
 
