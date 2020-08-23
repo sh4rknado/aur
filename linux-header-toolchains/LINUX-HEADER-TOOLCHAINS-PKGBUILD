@@ -17,9 +17,13 @@ backup=()
 options=()
 install=
 changelog=
-source=($pkgname-$pkgver.tar.xz)
+source=(
+  'http://192.168.1.202/aur/linux-toolchains/PKGBUILD'
+)
 noextract=()
-md5sums=(ee17763117af02637f9f98bfeee32a09) #autofill using updpkgsums
+md5sums=(
+  'ee17763117af02637f9f98bfeee32a09'
+)
 
 build() {
 
