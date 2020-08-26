@@ -21,7 +21,7 @@ source=(
   'http://192.168.1.202/aur/m4-tools/M4-TOOLS-PKGBUILD'
   'http://192.168.1.202/aur/ncurse-tools/NCURSE-TOOLS-PKGBUILD'
   'http://192.168.1.202/aur/bash-tools/BASH-TOOLS-PKGBUILD'
-  'http://192.168.1.202/aur/bash-tools/COREUTILS-TOOLS-PKGBUILD'
+  'http://192.168.1.202/aur/coreutils-tools/COREUTILS-TOOLS-PKGBUILD'
 )
 noextract=()
 md5sums=(
