@@ -2,7 +2,7 @@
 pkgname="lfs-toolschains"
 pkgver="1.0"
 pkgrel=1
-pkgdesc="Toolschains LFS Packages"
+pkgdesc="LFS Toolschains Packages"
 arch=(x86_64)
 url=""
 license=('GPL')
