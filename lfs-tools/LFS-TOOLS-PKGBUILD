@@ -28,7 +28,7 @@ md5sums=(
   'f8f88b7116228d5b4b155e8ff7b9a3f6'
   'a2fdd094327029d6b26c98e2cf836e80'
   '014ce124e8d514673f34edcedc0ae3df'
-  '014ce124e8d514673f34edcedc0ae3df'
+  '62b9a92896a897564f9a6b930441db55'
 )
 
 _BUILD_DIR=$(pwd)
